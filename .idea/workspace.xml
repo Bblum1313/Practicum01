@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01dfc1e2-bb3d-4be2-af0c-302ba54eca5f" name="Changes" comment="Start">
-      <change afterPath="$PROJECT_DIR$/src/PersonGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PersonReader.java" afterDir="false" />
+    <list default="true" id="01dfc1e2-bb3d-4be2-af0c-302ba54eca5f" name="Changes" comment="PersonGenerator complete">
+      <change afterPath="$PROJECT_DIR$/src/ProductReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProductWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PersonData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PersonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,8 @@
   "keyToString": {
     "Application.PersonGenerator.executor": "Run",
     "Application.PersonReader.executor": "Run",
+    "Application.ProductReader.executor": "Run",
+    "Application.ProductWriter.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -87,11 +90,29 @@
       <option name="project" value="LOCAL" />
       <updated>1724939141435</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="PersonGenerator">
+      <option name="closed" value="true" />
+      <created>1725304248873</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725304248873</updated>
+    </task>
+    <task id="LOCAL-00003" summary="PersonGenerator complete">
+      <option name="closed" value="true" />
+      <created>1725304266849</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725304266849</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start" />
+    <MESSAGE value="PersonGenerator" />
+    <MESSAGE value="PersonGenerator complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="PersonGenerator complete" />
   </component>
 </project>
