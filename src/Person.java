@@ -1,4 +1,4 @@
-
+import java.util.Calendar;
 
 
 public class Person {
@@ -71,5 +71,18 @@ public class Person {
     public void setyob(int yob) {
         this.yob = yob;
     }
+    public String getAge() {
+        Calendar now = Calendar.getInstance();
+        int currentYear = now.get(Calendar.YEAR);
+        int age = currentYear - yob;
+        return String.valueOf(age);
+    }
+
+    public String getAge(int year) {
+        int age = year - yob;
+        return String.valueOf(age);
+    }
 
 }
+
+
