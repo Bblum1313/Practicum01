@@ -82,7 +82,14 @@ public class Person {
         int age = year - yob;
         return String.valueOf(age);
     }
+    public String toCSV()
+    {
 
+        final char DQ = '\"';
+
+        return(DQ + ID + DQ + ", " + DQ + fName + DQ + ", " +  DQ + lName +  DQ + ", " +  DQ + title + DQ + ", " + yob);
+
+    }
 }
 
 
