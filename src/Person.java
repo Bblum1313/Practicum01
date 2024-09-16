@@ -1,6 +1,5 @@
 import java.util.Calendar;
 
-
 public class Person {
 
         private String ID;
@@ -82,6 +81,18 @@ public class Person {
         int age = year - yob;
         return String.valueOf(age);
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "ID='" + ID + '\'' +
+                ", fName='" + fName + '\'' +
+                ", lName='" + lName + '\'' +
+                ", title='" + title + '\'' +
+                ", yob=" + yob +
+                '}';
+    }
+
     public String toCSV()
     {
 
@@ -90,6 +101,30 @@ public class Person {
         return(DQ + ID + DQ + ", " + DQ + fName + DQ + ", " +  DQ + lName +  DQ + ", " +  DQ + title + DQ + ", " + yob);
 
     }
+    public String toJSON()
+    {
+        String rString = "";
+        char DQ = '\u0022';  // Assign the double quote char to a variable
+        rString =  "{" + DQ + "IDNum" + DQ + ":" + DQ + ID + DQ + ",";
+        rString += DQ + "firstName" + DQ + ":" + DQ + fName + DQ + ",";
+        rString += " " + DQ + "lastName"  + DQ + ":" + DQ + lName + DQ + ",";
+        rString += " " + DQ + "YOB"  + DQ + ":" + yob + "}";
+
+        return rString;
+    }
+    public String toXML()
+    {
+        String rString = "";
+
+        rString = "<Person>" + "<IDNum>" + ID + "</IDNum>";
+        rString += "<firstName>" + fName + "</firstName>";
+        rString += "<lastName>" + lName + "</lastName>";
+        rString += "<YOB>" + yob + "</YOB></Person>";
+
+        return rString;
+    }
+
+
 }
 
 
